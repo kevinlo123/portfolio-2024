@@ -21,6 +21,14 @@ body {
   background: white;
 }
 
+h1,h2,p,div {
+  color: black;
+}
+
+a {
+  color: black;
+}
+
 a:hover {
   color: red;
 }
