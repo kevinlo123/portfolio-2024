@@ -21,3 +21,7 @@ body {
   background: white;
 }
 
+a:hover {
+  color: red;
+}
+
