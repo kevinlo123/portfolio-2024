@@ -1,5 +1,5 @@
 import { db } from '@vercel/postgres';
-import BlurImage from '../../../components/BlurImage'
+import BlurImage from '../../components/BlurImage'
 
 
 const client = await db.connect();
@@ -10,7 +10,7 @@ export default async function ProjectsTemplate ({ params }) {
     const imageURL = new TextDecoder().decode(project.rows[0].image);
 
     return (
-        <div>
+        <div className="mt-40 ml-16">
             <h1>project template page</h1>
             <h2>{project.rows[0].name}</h2>
             <p>{project.rows[0].description}</p>
