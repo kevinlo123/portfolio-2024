@@ -1,5 +1,5 @@
 import { db } from '@vercel/postgres';
-import Image from 'next/image'
+import BlurImage from '../../../components/BlurImage'
 
 
 const client = await db.connect();
@@ -14,12 +14,9 @@ export default async function ProjectsTemplate ({ params }) {
             <h1>project template page</h1>
             <h2>{project.rows[0].name}</h2>
             <p>{project.rows[0].description}</p>
-            <Image
-                src={imageURL}
-                width={500}
-                height={500}
-                alt="Picture of the website"
-            />
+            <div style={{ width: '500px', height: 'auto' }}>
+                <BlurImage image={imageURL} />
+            </div>
         </div>
     )
 }
