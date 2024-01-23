@@ -18,7 +18,7 @@ export default async function Projects() {
                 <Link href={`/projects/${project.link}`} className="project-item group flex items-center justify-between">
                   <h3 className="uppercase text-[24px] tracking-widest whitespace-nowrap lg:text-[60px] text-white group-hover:translate-x-5 duration-500 transition">{project.name}</h3>
                 </Link>
-                <hr className="project-line opacity-20 w-3/4 my-5" />
+                <hr className="project-line opacity-20 w-100% lg:w-3/4 my-5" />
               </div>
             ))}
           </div>
