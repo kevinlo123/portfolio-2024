@@ -1,6 +1,5 @@
-import Image from 'next/image'
 import Projects from './projects.js'
-// import Resume from '../../public/Kevin-lopez-resume.pdf'
+import TextAnimation from './components/TextAnimation.js'
  
 
 export default function Home() {
@@ -34,6 +33,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <TextAnimation />
       <Projects />
     </main>
   );
