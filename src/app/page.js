@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       <section className="flex items-center h-screen relative px-[30px] lg:px-[60px]">
-        <div id="awwwards" className="fixed z-50 -translate-y-1/2 top-1/2 right-0 rotate-[270deg] translate-x-[36%] text-center flex items-center">
+        <div id="awwwards" className="absolute z-50 -translate-y-1/2 top-1/2 right-0 rotate-[270deg] translate-x-[36%] text-center flex items-center">
           <a href="/Kevin-lopez-resume.pdf" target="_blank" rel="noreferrer" className="w-44 h-12 bg-white text-black flex justify-center items-center hover:text-black">
             <span className="uppercase font-bold tracking-widest text-xl">resume</span>
           </a>
