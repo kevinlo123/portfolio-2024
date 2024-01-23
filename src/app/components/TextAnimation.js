@@ -99,6 +99,17 @@ function TextAnimation() {
 
     tl8.to("#eighth", { backgroundPositionX: '0%' })
 
+    let tl9 = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#ninth",
+        start: "-=500", 
+        end: "-=350",
+        scrub: 1, 
+      },
+    });
+
+    tl9.to("#ninth", { backgroundPositionX: '0%' })
+
 
   }, []);
 
@@ -110,14 +121,15 @@ function TextAnimation() {
           </div>
         </div>
         <div className="text col-span-12 lg:col-span-6 flex flex-col gap-14">
-          <p id="first" className="about uppercase font-bold text-right text-[40px] lg:text-[100px] first-p">FRONTEND ADDICT</p>
-          <p id="second" className="about uppercase font-bold text-right text-[40px] lg:text-[100px]">PIXEL PERFECT</p>
-          <p id="third" className="about uppercase font-bold text-right text-[40px] lg:text-[100px]">RESPONSIVE</p>
-          <p id="fourth" className="about uppercase font-bold text-right text-[40px] lg:text-[100px]">GSAP</p>
-          <p id="fifth" className="about uppercase font-bold text-right text-[40px] lg:text-[100px]">CREATIVE CODER</p>
-          <p id="sixth" className="about uppercase font-bold text-right text-[40px] lg:text-[100px]">I love discovering new creative worlds</p>
-          <p id="seventh" className="about uppercase font-bold text-right text-[40px] lg:text-[100px]">ACCESSIBLE</p>
-          <p id="eighth" className="about uppercase font-bold text-right text-[40px] lg:text-[100px]">SEO</p>
+          <p id="first" className="about uppercase font-bold text-right text-[40px] lg:text-[100px] first-p">FRONTEND EXPERT</p>
+          <p id="second" className="about uppercase font-bold text-right text-[40px] lg:text-[100px]">BACKEND DEVELOPER</p>
+          <p id="third" className="about uppercase font-bold text-right text-[40px] lg:text-[100px]">NEXT.JS</p>
+          <p id="fourth" className="about uppercase font-bold text-right text-[40px] lg:text-[100px]">NUXT.JS</p>
+          <p id="fifth" className="about uppercase font-bold text-right text-[40px] lg:text-[100px]">NODE.JS</p>
+          <p id="sixth" className="about uppercase font-bold text-right text-[40px] lg:text-[100px]">RUBY ON RAILS</p>
+          <p id="seventh" className="about uppercase font-bold text-right text-[40px] lg:text-[100px]">POSTGRESQL</p>
+          <p id="eighth" className="about uppercase font-bold text-right text-[40px] lg:text-[100px]">CSS/SCSS</p>
+          <p id="ninth" className="about uppercase font-bold text-right text-[40px] lg:text-[100px]">TAILWIND CSS</p>
         </div>
       </section>
     )
