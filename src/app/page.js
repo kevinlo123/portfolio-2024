@@ -1,4 +1,4 @@
-import Projects from './projects.js'
+import Projects from './components/projects.js'
 import TextAnimation from './components/TextAnimation.js'
  
 
