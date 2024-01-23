@@ -1,4 +1,3 @@
-import { chivo_mono, poppins, work_sans } from './fonts.js'
 import Header from './globals/Header.js'
 import "./globals.css";
 

@@ -19,7 +19,7 @@ function TextAnimation() {
       },
     });
 
-    tlquote.to(".quote-text", { opacity: '1' })
+    tlquote.to(".quote-text", { opacity: '1' , display: 'block'})
 
     let tlquote2 = gsap.timeline({
       scrollTrigger: {
@@ -30,7 +30,7 @@ function TextAnimation() {
       },
     });
 
-    tlquote2.to(".quote-text", { opacity: '0' })
+    tlquote2.to(".quote-text", { opacity: '0', display: 'none' })
 
 
     let tl = gsap.timeline({
@@ -140,7 +140,7 @@ function TextAnimation() {
       <section className="py-[80px] lg:py-[200px] relative grid grid-cols-12 px-[30px] lg:px-[60px]">
         <div className="col-span-6 relative hidden lg:block">
           <div className="fixed top-1/2 -translate-y-1/2 text-white w-1/3">
-            <p className="quote-text hidden lg:block citation opacity-0 font-[300] tracking-wide text-2xl italic">‟&nbsp;It’s not really that much big of a deal – you brush it off and you come back. Defeat is the secret ingredient to success.&nbsp;”<br /> <br /> - Connor McGregor</p>
+            <p className="quote-text hidden citation opacity-0 font-[300] tracking-wide text-2xl italic">‟&nbsp;It’s not really that much big of a deal – you brush it off and you come back. Defeat is the secret ingredient to success.&nbsp;”<br /> <br /> - Connor McGregor</p>
           </div>
         </div>
         <div className="text col-span-12 lg:col-span-6 flex flex-col gap-14">
