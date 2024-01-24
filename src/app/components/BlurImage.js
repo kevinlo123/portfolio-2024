@@ -6,7 +6,7 @@ export default function BlurImage({ image }) {
   const [isLoading, setLoading] = useState(true);
 
   return (
-    <div className="aspect-w-1 aspect-h-1 rounded-lg bg-gray-600 xl:aspect-w-7 xl:aspect-h-8">
+    <div className=" rounded-lg bg-gray-600 ">
       <Image
         alt=""
         src={image}
