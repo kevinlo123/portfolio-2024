@@ -6,8 +6,18 @@ const client = await db.connect();
 
 export default async function ProjectsTemplate ({ params }) {
 
-  const project = await client.sql`SELECT * FROM projects WHERE link = ${params.slug};`;
+  const currentPage = params.slug;
+  const project = await client.sql`SELECT * FROM projects WHERE link = ${currentPage};`;
   const imageURL = new TextDecoder().decode(project.rows[0].image);
+  const projects = await client.sql`SELECT * FROM projects`;
+  const projectLinks = []
+
+  projects.rows.forEach((project) => {
+    projectLinks.push(project.link)
+  })
+
+  let previousProject = projectLinks[projectLinks.indexOf(currentPage) - 1]
+  let nextProject = projectLinks[projectLinks.indexOf(currentPage) + 1]
 
   return (
     <main className="my-[150px] md:my-[200px] mx-[30px] md:mx-[60px]">
@@ -34,7 +44,29 @@ export default async function ProjectsTemplate ({ params }) {
           <BlurImage className="object-contain rounded-xl" image={imageURL} />
         </div>
       </section>
-      <a className="flex items-center justify-center gap-4 text-white mt-[100px] lg:mt-[200px]" href="/">
+      <div className="flex flex-row items-center justify-between lg:justify-center text-white mt-20">
+        { previousProject === undefined ? 
+        ''
+          :
+          <a className="flex gap-4 mr-5" href={`/projects/${previousProject}`}>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 8L4.70711 11.2929C4.31658 11.6834 4.31658 12.3166 4.70711 12.7071L8 16M5 12L19 12" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round"></path>
+            </svg>
+            Previous
+          </a>
+        }
+        { nextProject === undefined ? 
+        ''
+          :
+          <a className="flex gap-4 flex-row-reverse ml-5" href={`/projects/${nextProject}`}>
+            <svg className="rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 8L4.70711 11.2929C4.31658 11.6834 4.31658 12.3166 4.70711 12.7071L8 16M5 12L19 12" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round"></path>
+            </svg>
+            Next
+          </a>
+        }
+      </div>
+      <a className="flex items-center justify-center gap-4 text-white mt-[100px]" href="/">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M8 8L4.70711 11.2929C4.31658 11.6834 4.31658 12.3166 4.70711 12.7071L8 16M5 12L19 12" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round"></path>
         </svg>
