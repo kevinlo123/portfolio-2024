@@ -30,7 +30,7 @@ export default function Contact() {
 
 return (
     <main className="my-[150px] md:my-[200px] mx-[30px] md:mx-[60px]">
-      <h1 className="text-white project-name leading-[100%] font-medium text-[55px] lg:text-[80px] mb-14">Let's talk</h1>
+      <h1 className="text-white project-name leading-[100%] font-medium text-[55px] lg:text-[80px] mb-14">Let&rsquo;s talk</h1>
       <form id="form" className="flex flex-col text-black" onSubmit={handleSubmit}>
         <input className="input text-white mb-10 py-2.5 px-2.5 bg-transparent border border-white" type="text" placeholder="Name" name="name"/>
         <input className="input text-white mb-10 py-2.5 px-2.5 bg-transparent border border-white" type="email" placeholder="Email" name="email"/>
