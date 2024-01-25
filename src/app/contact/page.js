@@ -41,18 +41,24 @@ return (
           </form>
         </div>
         <div className="section-contact__inner-two mt-10 lg:mt-[15.75rem] lg:ml-auto">
-          <div className="border-white border py-7 px-9 mb-5 max-w-[265px]">
+          <div className="border-white border py-9 px-9 mb-10 max-w-[265px]">
             <h3 className="uppercase font-bold">Direct Inquiry:</h3>
             <p>lopezkevin175@gmail.com</p>
             <p>857-326-1512</p>
           </div>
-          <div className="border-white px-9 py-7 text-black bg-white max-w-[265px]">
+          <div className="border-white px-9 py-9 text-black bg-white max-w-[265px]">
             <h3 className="uppercase font-bold">Location:</h3>
             <p>Boston, Ma</p>
             <p>United States</p>
           </div>
         </div>
       </section>
+      <a className="flex items-center justify-center gap-4 text-white mt-[100px]" href="/">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 8L4.70711 11.2929C4.31658 11.6834 4.31658 12.3166 4.70711 12.7071L8 16M5 12L19 12" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round"></path>
+        </svg>
+        Go back to home page
+      </a>
     </main>
   );
 }
