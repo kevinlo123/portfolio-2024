@@ -24,6 +24,8 @@ export default function Contact() {
 
       if (result.success) {
           document.getElementById("form").reset();
+          document.getElementById("form").style.display = 'none';
+          document.getElementsByClassName("thank-you")[0].style.display = 'block';
       }
   }
 
@@ -33,6 +35,7 @@ return (
         <div className="section-contact__inner lg:w-8/12">
           <h1 className="uppercase font-bold text-white project-name leading-[100%] text-[40px] lg:text-[100px] mb-10">Contact</h1>
           <p className="mb-10 lg:w-[600px]">Have a question or a project in mind? Let&rsquo;s chat! Drop me a message below , and let&rsquo;s kick off a conversation. Whether it&rsquo;s a collaboration opportunity or just to say hello, your message is always welcome.</p>
+          <h2 className="thank-you hidden font-bold text-white text-[40px] lg:text-[50px] mt-10">Message received! I'll get back to you soon. Check out my portfolio in the meantime!</h2>
           <form id="form" className="flex flex-col text-black" onSubmit={handleSubmit}>
             <input className="rounded-none input text-white mb-10 py-2.5 px-2.5 bg-transparent border border-white" type="text" placeholder="Name" name="name" required/>
             <input className="rounded-none	input text-white mb-10 py-2.5 px-2.5 bg-transparent border border-white" type="email" placeholder="Email" name="email" required/>
