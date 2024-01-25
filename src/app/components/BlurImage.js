@@ -15,11 +15,11 @@ export default function BlurImage({ image }) {
         sizes="100vw"
         style={{ width: '100%', height: 'auto' }}
         className={`
-            duration-700 ease-in-out
+            lg:duration-700 lg:ease-in-out
             ${
               isLoading
-                ? "scale-110 blur-2xl grayscale"
-                : "scale-100 blur-0 grayscale-0"
+                ? "lg:scale-110 lg:blur-2xl lg:grayscale"
+                : "lg:scale-100 lg:blur-0 lg:grayscale-0"
             })`}
         onLoad={() => setLoading(false)}
       />

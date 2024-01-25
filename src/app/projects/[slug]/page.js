@@ -23,9 +23,9 @@ export default async function ProjectsTemplate ({ params }) {
     <main className="my-[150px] md:my-[200px] mx-[30px] md:mx-[60px]">
       <section className="flex flex-col gap-14 md:gap-6 lg:flex-row min-h-[80vh]">
         <div className="lg:w-1/3  flex flex-col gap-[20px]">
-          <h2 className="text-white project-name leading-[100%] font-medium text-[80px]">
+          <h1 className="text-white project-name leading-[100%] font-medium text-[55px] lg:text-[80px]">
             {project.rows[0].name}
-          </h2>
+          </h1>
           <div className="flex items-center flex-wrap gap-[6px] group">
             {project.rows[0].languages_used.map((project) => (
               <span key={project} className="tag-primary rounded-full border border-white text-white uppercase px-3">

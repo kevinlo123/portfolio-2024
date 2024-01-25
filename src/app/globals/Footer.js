@@ -2,7 +2,7 @@ export default function Footer() {
     return (
       <footer className="px-[30px] lg:pl-[0px]  lg:pr-[60px] lg:mx-10 mb-[100px] lg:mb-[200px] flex flex-col lg:flex-row mt-[50px] lg:mt-[100px]">
         <div className="lg:w-1/2">
-          <a className="uppercase hover:bg-white hover:text-black transition-colors get-in-touch block text-center text-white text-[30px] w-full lg:!w-fit lg:text-[45px] xl:text-[60px] rounded-full px-9 lg:px-[4rem] py-2 border border-white" href="mailto:lopezkevin175@gmail.com" >Get in touch</a>
+          <a className="uppercase hover:bg-white hover:text-black transition-colors get-in-touch block text-center text-white text-[30px] w-full lg:!w-fit lg:text-[45px] xl:text-[60px] rounded-full px-9 lg:px-[4rem] py-2 border border-white" href="/contact" >Get in touch</a>
         </div>
         <div className="flex flex-col w-full lg:items-end lg:w-1/2 gap-6 mt-16 lg:mt-0">
           <a className="link-underline gap-4 text-[20px] social-link lg:text-[30px] flex items-center relative lg:w-1/3 justify-between text-white" href="https://www.linkedin.com/in/kevinlopez12/" target="_blank">
