@@ -52,3 +52,8 @@ form .input:active, form .input:focus, form .input:focus-visible {
   transition: .3s ease-in-out;
 }
 
+.get-in-touch:hover {
+  box-shadow:  0 0 3px rgb(190 254 194), 0 0 10px rgb(173 236 175);
+  transition: .3s ease-in-out;
+}
+

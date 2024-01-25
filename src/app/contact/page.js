@@ -24,19 +24,35 @@ export default function Contact() {
 
       if (result.success) {
           document.getElementById("form").reset();
-          console.log(result);
       }
   }
 
 return (
     <main className="my-[150px] md:my-[200px] mx-[30px] md:mx-[60px]">
-      <h1 className="text-white project-name leading-[100%] font-medium text-[55px] lg:text-[80px] mb-14">Let&rsquo;s talk</h1>
-      <form id="form" className="flex flex-col text-black" onSubmit={handleSubmit}>
-        <input className="input text-white mb-10 py-2.5 px-2.5 bg-transparent border border-white" type="text" placeholder="Name" name="name"/>
-        <input className="input text-white mb-10 py-2.5 px-2.5 bg-transparent border border-white" type="email" placeholder="Email" name="email"/>
-        <textarea className="input text-white mb-10 py-2.5 px-2.5 h-[500px] bg-transparent border border-white" placeholder="Message" name="message"></textarea>
-        <button className="text-white" type="submit">Submit Form</button>
-      </form>
+      <section className="section-contact lg:flex">
+        <div className="section-contact__inner lg:w-8/12">
+          <h1 className="uppercase font-bold text-white project-name leading-[100%] text-[40px] lg:text-[100px] mb-10">Contact</h1>
+          <p className="mb-10 lg:w-[600px]">Have a question or a project in mind? Let&rsquo;s chat! Drop me a message below , and let&rsquo;s kick off a conversation. Whether it&rsquo;s a collaboration opportunity or just to say hello, your message is always welcome.</p>
+          <form id="form" className="flex flex-col text-black" onSubmit={handleSubmit}>
+            <input className="rounded-none input text-white mb-10 py-2.5 px-2.5 bg-transparent border border-white" type="text" placeholder="Name" name="name" required/>
+            <input className="rounded-none	input text-white mb-10 py-2.5 px-2.5 bg-transparent border border-white" type="email" placeholder="Email" name="email" required/>
+            <textarea className="rounded-none	input text-white mb-10 py-2.5 px-2.5 h-[500px] bg-transparent border border-white" placeholder="Message" name="message" required></textarea>
+            <button className="flex justify-center bg-white hover:bg-black hover:text-white transition-colors get-in-touch block text-center text-black text-[16px] rounded-full px-[4rem] w-[100px] center-text py-2 border hover:border-white" type="submit">Send</button>
+          </form>
+        </div>
+        <div className="section-contact__inner-two mt-10 lg:mt-[15.75rem] lg:ml-auto">
+          <div className="border-white border py-7 px-9 mb-5 max-w-[265px]">
+            <h3 className="uppercase font-bold">Direct Inquiry:</h3>
+            <p>lopezkevin175@gmail.com</p>
+            <p>857-326-1512</p>
+          </div>
+          <div className="border-white px-9 py-7 text-black bg-white max-w-[265px]">
+            <h3 className="uppercase font-bold">Location:</h3>
+            <p>Boston, Ma</p>
+            <p>United States</p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
