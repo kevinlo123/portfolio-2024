@@ -1,0 +1,8 @@
+Model Information:
+* title:	Mercedes W14 F1 (RIGGED)
+* source:	https://sketchfab.com/3d-models/mercedes-w14-f1-rigged-5428653841f548408c2abdc236cd8fb8
+* author:	sarveshkolamkar (https://sketchfab.com/sarvesh902)
+
+Model License:
+* license type:	SKETCHFAB Editorial (https://sketchfab.com/licenses)
+* requirements:	Use only in connection with events that are newsworthy or of public interest
