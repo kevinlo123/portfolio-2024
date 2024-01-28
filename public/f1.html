@@ -105,7 +105,7 @@
     </style>
 </head>
 <body>
-    <div id="loading-screen" style="display: none;">
+    <div id="loading-screen" style="display: flex;">
         <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/three@0.138.3/build/three.min.js"></script>
@@ -149,14 +149,17 @@
             function (gltf) {
                 gltf.scene.traverse(function (child) {
                     if (child.isMesh) {
-                        child.castShadow = true;
-                        child.receiveShadow = true;
+                        // Optimization: Disable shadows for individual meshes
+                        child.castShadow = false;
+                        child.receiveShadow = false;
                     }
                 });
-                scene.add(gltf.scene);
+                // Optimization: Merge meshes into a single object
+                const mergedObject = new THREE.Object3D().add(...gltf.scene.children);
+                scene.add(mergedObject);
 
                 // Calculate the bounding box of the loaded model
-                const box = new THREE.Box3().setFromObject(gltf.scene);
+                const box = new THREE.Box3().setFromObject(mergedObject);
                 modelBoundingBox = box;
 
                 // Once the model is loaded, hide the loading screen
