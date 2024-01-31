@@ -1,6 +1,7 @@
 import Header from './globals/Header.js'
 import Footer from './globals/Footer.js'
 import "./globals.css";
+import {Providers} from "./providers";
 
 export const metadata = {
   title: "Portfolio",
@@ -9,10 +10,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark-mode transition-colors">
       <body>
         <Header />
-        {children}
+          <Providers>
+            {children}
+          </Providers>
         <Footer />
       </body>
     </html>
