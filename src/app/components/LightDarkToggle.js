@@ -35,8 +35,8 @@ export default function LightDarkToggle() {
   };
 
   return (
-    <button onClick={toggleDarkMode} className="w-44 h-12 text-center transition-colors flex z-50 right-0 text-center flex items-center justify-center border toggle">
-      <span className="uppercase font-bold tracking-widest text-xl upppercase text-center">{`${isDarkMode ? 'light mode' : 'dark mode'}`}</span>
+    <button onClick={toggleDarkMode} className="w-36 lg:w-44 h-12 text-center transition-colors flex z-50 right-0 text-center flex items-center justify-center border toggle">
+      <span className="uppercase font-bold tracking-widest text-md lg:text-xl upppercase text-center">{`${isDarkMode ? 'light mode' : 'dark mode'}`}</span>
     </button>
   );
 }
