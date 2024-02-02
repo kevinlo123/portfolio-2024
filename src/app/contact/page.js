@@ -46,7 +46,7 @@ return (
           </form>
         </div>
         <div className="section-contact__inner-two mt-10 lg:mt-[15.75rem] lg:ml-auto">
-          <div className="border py-9 px-9 mb-10 max-w-[265px]">
+          <div className="border py-9 px-9 mb-10 bg-white text-black max-w-[265px]">
             <h3 className="uppercase font-bold">Direct Inquiry:</h3>
             <p>lopezkevin175@gmail.com</p>
             <p>857-326-1512</p>
