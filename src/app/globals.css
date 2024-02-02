@@ -212,3 +212,8 @@ form .input:active, form .input:focus, form .input:focus-visible {
   transition: .3s ease-in-out;
 }
 
+header label {
+  position: relative;
+  left: .75rem;
+}
+
