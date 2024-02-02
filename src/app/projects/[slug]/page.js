@@ -41,7 +41,7 @@ export default async function ProjectsTemplate ({ params }) {
             Go to website <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Arrow / Arrow_Up_Right_LG"><path id="Vector" d="M18.3646 5.63623H11.2939M18.3646 5.63623L18.3643 12.7073M18.3646 5.63623L5.63672 18.3642" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path></g></svg>
           </a>
         </div>
-        <div className="flex flex-col gap-[30px] lg:w-1/2 h-full ml-auto">
+        <div className="flex flex-col gap-[30px] lg:w-1/2 h-full lg:ml-auto">
           <BlurImage className="object-contain rounded-xl" image={imageURL} />
         </div>
       </section>
