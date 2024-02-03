@@ -217,3 +217,7 @@ header label {
   left: .75rem;
 }
 
+
+.light-mode footer img {
+  display: none;
+}
