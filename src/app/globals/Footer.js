@@ -20,7 +20,16 @@ export default function Footer() {
               alt="my logo"
             />
             :
-            <Link className="contact-link uppercase hover:bg-white hover:text-black transition-colors get-in-touch block text-center text-[30px] w-full lg:!w-fit lg:text-[40px] rounded-full px-9 lg:px-[4rem] py-2 border" href="/contact">Get in touch</Link>
+            <>
+              <Image 
+                className="lg:hidden m-auto lg:ml-6"
+                src="/logo.png"
+                width={100}
+                height={100}
+                alt="my logo"
+              />
+              <Link className="contact-link uppercase hover:bg-white hover:text-black transition-colors get-in-touch block text-center text-[30px] w-full lg:!w-fit lg:text-[40px] rounded-full px-9 lg:px-[4rem] py-2 border" href="/contact">Get in touch</Link>
+            </>
           }
         </div>
         <div className="flex flex-col w-full lg:items-end lg:w-1/2 gap-6 mt-16 lg:mt-0">
