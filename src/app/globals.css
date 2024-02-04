@@ -155,10 +155,12 @@ a:hover:not(.border-white, #resume) {
 
 .light-mode form input {
   border-color: black;
+  color: black;
 }
 
 .dark-mode form input {
   border-color: white;
+  color: white;
 }
 
 .light-mode form input::placeholder {
@@ -167,10 +169,12 @@ a:hover:not(.border-white, #resume) {
 
 .light-mode form textarea {
   border-color: black;
+  color: black;
 }
 
 .dark-mode form textarea {
   border-color: white;
+  color: white;
 }
 
 .light-mode form textarea::placeholder {
