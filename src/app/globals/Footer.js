@@ -26,7 +26,7 @@ export default function Footer() {
                 src="/logo.png"
                 width={100}
                 height={100}
-                style={{'margin-bottom': '4rem'}}
+                style={{'marginBottom': '4rem'}}
                 alt="my logo"
               />
               <Link className="contact-link uppercase hover:bg-white hover:text-black transition-colors get-in-touch block text-center text-[30px] w-full lg:!w-fit lg:text-[40px] rounded-full px-9 lg:px-[4rem] py-2 border" href="/contact">Get in touch</Link>
