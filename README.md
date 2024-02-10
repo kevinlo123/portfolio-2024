@@ -1,3 +1,18 @@
+## Getting Started with Docker
+This project can work with Docker. To get it running make sure you have Docker installed on your machine and run
+
+```bash
+sudo docker compose up
+``` 
+to stop
+```bash
+sudo docker compose down
+``` 
+
+This should spin up a server on [http://localhost:3000](http://localhost:3000) 
+
+If your on mac please make sure to have docker desktop installed.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
