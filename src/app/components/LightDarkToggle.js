@@ -5,11 +5,11 @@ import { Switch } from "@nextui-org/react";
 
 const LightDarkToggle = () => {
   // State for mode
-  const [isDarkMode, setIsDarkMode] = useState(true); // Change initial state to false
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const savedMode = localStorage.getItem("isDarkMode");
+      const savedMode = localStorage.getItem("isLightMode");
       setIsDarkMode(savedMode === "true"); // Set initial mode based on localStorage
     }
   }, []);
@@ -18,7 +18,7 @@ const LightDarkToggle = () => {
   const toggleDarkMode = () => {
     const newMode = !isDarkMode;
     setIsDarkMode(newMode);
-    localStorage.setItem("isDarkMode", newMode); // Save mode to localStorage
+    localStorage.setItem("isLightMode", newMode); // Save mode to localStorage
   };
 
   // Effect to update styles based on mode
