@@ -9,7 +9,7 @@ export default function HomePageHero () {
         </a>
       </div>
       <h1 className="overflow-hidden text-heading font-bold text-[45px] leading-[100%] xl:text-[120px] 2xl:text-[125px] xl:leading-[120px] 2xl:leading-[140px] uppercase mb-16">
-        Frontend Developer
+        Frontend Developer!
       </h1>
       <div className="absolute left-0 bottom-[60px] right-0 flex items-end lg:items-start justify-between px-[30px] lg:px-[60px]">
         <div className="xl:h-[100px] xl:w-[100px] 2xl:w-[125px] 2xl:h-[125px] flex items-center">
