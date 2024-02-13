@@ -11,8 +11,10 @@ export default function Header() {
   useEffect(() => {
     if (isOpen) {
       document.getElementsByTagName('body')[0].style.overflow = "hidden";
+      document.getElementsByTagName('header')[0].style.height = '100%';
     } else {
       document.getElementsByTagName('body')[0].style.overflow = "auto";
+      document.getElementsByTagName('header')[0].style.height = 'auto';
     }
   }, [isOpen]);
 
