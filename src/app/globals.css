@@ -225,3 +225,11 @@ header label {
 .light-mode footer img {
   display: none;
 }
+
+.hamburger-react {
+  z-index: 52;
+}
+
+.light-mode header nav {
+  background-color: white;
+}
