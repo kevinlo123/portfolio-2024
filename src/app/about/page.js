@@ -4,6 +4,10 @@ export default function About() {
 
 return (
     <main className="contact my-[150px] md:my-[200px] mx-[30px] md:mx-[60px]">
+      <div className="flex flex-col lg:flex-row justify-between lg:gap-4">
+        <iframe height="275" frameborder="no" allow="autoplay" className="mb-5 w-[100%]" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/335930055&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <iframe height="275" frameborder="no" allow="autoplay" className="mb-5 w-[100%]" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/346202223&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      </div>
       <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
         <div className="grid gap-4">
           <div>
