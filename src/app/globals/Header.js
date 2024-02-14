@@ -13,6 +13,8 @@ export default function Header() {
     return <nav className="…" ref={ref} {...props}></nav>
   })
 
+  nav.displayName = 'Nav';
+
   useEffect(() => {
     if (isOpen) {
       document.getElementsByTagName('body')[0].style.overflow = "hidden";
