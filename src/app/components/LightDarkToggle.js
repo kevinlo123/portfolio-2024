@@ -67,14 +67,26 @@ const LightDarkToggle = () => {
   );
 
   return (
-    <Switch
-      onChange={toggleDarkMode}
-      isSelected={!isDarkMode}
-      size="lg"
-      color="success"
-      startContent={<SunIcon />}
-      endContent={<MoonIcon />}
-    />
+    <>
+      <Switch
+        onChange={toggleDarkMode}
+        isSelected={!isDarkMode}
+        size="lg"
+        color="success"
+        startContent={<SunIcon />}
+        endContent={<MoonIcon />}
+        className="hidden lg:block"
+      />
+      <Switch
+        onChange={toggleDarkMode}
+        isSelected={!isDarkMode}
+        size="sm"
+        color="success"
+        startContent={<SunIcon />}
+        endContent={<MoonIcon />}
+        className="lg:hidden"
+      />
+    </>
   );
 };
 
