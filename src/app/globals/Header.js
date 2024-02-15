@@ -30,8 +30,8 @@ export default function Header() {
   }
 
   return (
-    <header className="h-[100%] px-[30px] md:px-[60px] py-[30px] flex items-center justify-between absolute top-0 left-0 right-0 items-baseline">
-      <Link href="/" className="text-[28px] xl:text-[32px] 2xl:text-[40px] font-[300] text-heading">Kevin Lopez</Link>
+    <header className="h-[100%] pl-[30px] pr-[16px] py-[30px] lg:pr-[60px] lg:px-[60px]  flex items-center justify-between absolute top-0 left-0 right-0 items-baseline">
+      <Link href="/" className="text-[30px] xl:text-[32px] 2xl:text-[40px] font-[300] text-heading">Kevin Lopez</Link>
       <div className="w-[110px] lg:w-[135px] flex justify-between items-center">
         <LightDarkToggle />
         <Hamburger
