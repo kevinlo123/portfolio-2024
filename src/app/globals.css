@@ -236,7 +236,7 @@ header label {
 
 .fade-in {
   opacity: 0;
-  transition: opacity 1s ease-in-out; /* Adjust the duration and timing function as needed */
+  transition: opacity .5s ease-in-out; /* Adjust the duration and timing function as needed */
 }
 
 .fade-in.active {
