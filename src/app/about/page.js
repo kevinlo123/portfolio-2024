@@ -16,6 +16,7 @@ export default function About() {
     '/about/trat43.jpg',
     '/about/gamestop-black-friday-deals-lead.jpg',
     '/about/boston-skyline-best-views-socail.jpg',
+    '/about/a3cb67ae62a542c43bade861ff106183.jpg',
     '/about/gettyimages-1800093928-3ea884e9fb65ed78aa5a1106a1670342ba8c40cc.jpg',
     '/about/5deea7b9a26726235221933f8348fb4f.jpg',
     '/about/1135135.jpg',
@@ -24,6 +25,7 @@ export default function About() {
     '/about/2021-08-05.jpg',
     '/about/downtown-medellin-colombia.avif',
     '/about/dice-chips-and-playing-cards.webp',
+    '/about/a16ba0d0dc35df6649fcb42430fb0f9d.jpg',
     '/about/merlin_138870675_80a610d6-d7a6-4bcc-aa2d-cbe76d7fadf7-articleLarge.webp'
   ]
 
