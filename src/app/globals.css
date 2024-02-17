@@ -234,6 +234,14 @@ header label {
   background-color: white;
 }
 
+.light-mode header nav a:after {
+  background-color: black;
+}
+
+.dark-mode header nav a:after {
+  background-color: white;
+}
+
 .fade-in {
   opacity: 0;
   transition: opacity .5s ease-in-out; /* Adjust the duration and timing function as needed */
@@ -241,4 +249,12 @@ header label {
 
 .fade-in.active {
   opacity: 1;
+}
+
+.light-mode .animate-spin {
+  border-color: black;
+}
+
+.dark-mode .animate-spin {
+  border-color: white;
 }

@@ -50,12 +50,12 @@ export default function Header() {
             leave="transform duration-200 transition ease-in-out"
             leaveFrom="opacity-100 rotate-0 scale-100 "
             leaveTo="opacity-0 scale-95 "
-            className="lg:py-[4rem] text-center lg:text-left lg:px-[4rem] py-[3rem] px-[3rem] absolute w-[100%] h-[100%] bg-black left-0 top-0 z-[51] flex flex-col justify-evenly"
+            className="lg:py-[4rem] flex items-center lg:items-start text-center lg:text-left lg:px-[4rem] py-[3rem] px-[3rem] absolute w-[100%] h-[100%] bg-black left-0 top-0 z-[51] flex flex-col justify-evenly"
           >
-            <Link onClick={close} href="/" className="mb-5 text-[40px] tracking-widest lg:text-[60px] font-[300] text-heading uppercase font-bold">Home</Link>
-            <Link onClick={close} href="/about" className="mb-5 text-[40px] tracking-widest lg:text-[60px] font-[300] text-heading uppercase font-bold">About</Link>
-            <Link onClick={close} href="/projects/acoustic" className="mb-5 text-[40px] tracking-widest lg:text-[60px] font-[300] text-heading uppercase font-bold">Projects</Link>
-            <Link onClick={close} href="/contact" className="mb-5 text-[40px] tracking-widest lg:text-[60px] font-[300] text-heading uppercase font-bold">Contact</Link>
+            <Link onClick={close} href="/" className="mb-5 text-[40px] tracking-widest lg:text-[60px] font-[300] text-heading uppercase font-bold relative w-fit block after:block after:content-[''] after:absolute after:h-[7px] w-[50%] lg:w-fit after:top-[3.5rem] lg:after:top-[5rem] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Home</Link>
+            <Link onClick={close} href="/about" className="mb-5 text-[40px] tracking-widest lg:text-[60px] font-[300] text-heading uppercase font-bold relative w-fit block after:block after:content-[''] after:absolute after:h-[7px] after:top-[3.5rem] lg:after:top-[5rem] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">About</Link>
+            <Link onClick={close} href="/projects/acoustic" className="mb-5 text-[40px] tracking-widest lg:text-[60px] font-[300] text-heading uppercase font-bold relative w-fit block after:block after:content-[''] after:absolute after:top-[3.5rem] lg:after:top-[5rem] after:h-[7px] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Projects</Link>
+            <Link onClick={close} href="/contact" className="mb-5 text-[40px] tracking-widest lg:text-[60px] font-[300] text-heading uppercase font-bold relative w-fit block after:block after:content-[''] after:absolute after:h-[7px] after:top-[3.5rem] lg:after:top-[5rem] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Contact</Link>
           </Transition> 
         }
       </div>

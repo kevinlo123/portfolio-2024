@@ -3,7 +3,7 @@
 export default function HomePageHero () {
   return (
     <section className="flex items-center h-screen relative px-[30px] lg:px-[60px]">
-      <div className="absolute z-50 -translate-y-1/2 top-1/2 right-0 rotate-[270deg] translate-x-[37%] text-center flex items-center">
+      <div className="absolute z-50 -translate-y-1/2 top-1/2 right-0 rotate-[270deg] translate-x-[36.5%] text-center flex items-center">
         <a id="resume" href="/Kevin-lopez-resume.pdf" target="_blank" rel="noreferrer" className="w-44 h-12 flex justify-center items-center hover:text-black">
           <span className="uppercase font-bold tracking-widest text-xl">resume</span>
         </a>
