@@ -87,16 +87,16 @@ export default function About() {
         <div className={`mb-[5rem] ${loading ? 'hidden' : 'block'}`}>
           <h1 className="uppercase font-bold project-name leading-[100%] text-[40px] lg:text-[100px] mb-10 lg:mb-[3.5rem]">About Me</h1>
           <p className="citation font-[300] tracking-wide text-2xl italic">
-            Hey there! I'm Kevin Lopez, a 29-year-old front-end developer based in the vibrant city of Boston, MA. Born and raised in the USA, my roots trace back to the beautiful landscapes and rich culture of Colombia, infusing my work with a blend of American innovation and Latin warmth.
+            Hey there! I&rsquo;m Kevin Lopez, a 29-year-old front-end developer based in the vibrant city of Boston, MA. Born and raised in the USA, my roots trace back to the beautiful landscapes and rich culture of Colombia, infusing my work with a blend of American innovation and Latin warmth.
             <br />
             <br />
             With a passion for crafting engaging and user-friendly web experiences, I thrive on the creative challenges of front-end development. From sleek designs to seamless functionality, I strive to bring visions to life through clean code and intuitive interfaces.
             <br />
             <br />
-            When I'm not immersed in the digital realm, you'll often find me exploring Boston's eclectic neighborhoods, sipping on a freshly brewed beer, or losing track of time while jamming to my favorite tunes. Scroll below to discover some of my favorite music and snapshots.
+            When Im not immersed in the digital realm, you&rsquo;ll often find me exploring Boston&rsquo;s eclectic neighborhoods, sipping on a freshly brewed beer, or losing track of time while jamming to my favorite tunes. Scroll below to discover some of my favorite music and snapshots.
             <br />
             <br />
-            Let's connect and build something incredible!
+            Let&rsquo;s connect and build something incredible!
           </p>
         </div>
         <div className={`flex justify-center items-center h-[50vh] ${loading ? 'block' : 'hidden'}`}>
@@ -115,7 +115,8 @@ export default function About() {
             <img 
               key={url}
               src={url}
-              loading='lazy'
+              loading="lazy"
+              alt="lifestyle picture"
               ref={el => imagesRef.current[index] = el}
               className="w-full aspect-square mb-4 max-w-full rounded-lg object-cover object-center fade-in"
             />
