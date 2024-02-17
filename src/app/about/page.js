@@ -17,8 +17,8 @@ export default function About() {
     '/about/gamestop-black-friday-deals-lead.jpg',
     '/about/boston-skyline-best-views-socail.jpg',
     '/about/gettyimages-1800093928-3ea884e9fb65ed78aa5a1106a1670342ba8c40cc.jpg',
-    '/about/a16ba0d0dc35df6649fcb42430fb0f9d.jpg',
     '/about/5deea7b9a26726235221933f8348fb4f.jpg',
+    '/about/1135135.jpg',
     '/about/photo-1518546305927-5a555bb7020d.avif',
     '/about/Eq_it-na_pizza-margherita_sep2005_sml.jpg',
     '/about/2021-08-05.jpg',
@@ -103,7 +103,7 @@ export default function About() {
           <div className="animate-spin rounded-full h-32 w-32 border-b-4"></div>
         </div>
         <div className={`flex flex-col lg:flex-row justify-between lg:gap-4 ${loading ? 'hidden' : 'block'}`}>
-          <iframe className={loading ? "soundcloud-embed mb-5 w-[100%] rounded-lg" : "soundcloud-embed mb-5 w-[100%] rounded-lg fade-in active"}  width="100%" height="315" src="https://www.youtube.com/embed/videoseries?si=jo6nZlwAlcZa6U5e&amp;list=PL3ViwmNp6G049Twt9ALIeOq7S17WxA62z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe className={loading ? "soundcloud-embed mb-5 w-[100%] rounded-lg" : "soundcloud-embed mb-5 w-[100%] rounded-lg fade-in active"}  width="100%" height="315" src="https://www.youtube.com/embed/videoseries?si=jo6nZlwAlcZa6U5e&amp;list=PL3ViwmNp6G049Twt9ALIeOq7S17WxA62z" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         </div>
         <div className={`flex flex-col lg:flex-row justify-between lg:gap-4 ${loading ? 'hidden' : 'block'}`}>
           <iframe height="275" allow="autoplay" className={loading ? "soundcloud-embed mb-5 w-[100%] rounded-lg" : "soundcloud-embed mb-5 w-[100%] rounded-lg fade-in active"} src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/141521022&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"  ></iframe>
