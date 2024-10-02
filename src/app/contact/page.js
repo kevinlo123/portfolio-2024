@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import AnimatedText from '../components/AnimatedText';
 
 export default function Contact() {
 
@@ -31,11 +32,13 @@ export default function Contact() {
       }
   }
 
+  const text = "contact";
+
 return (
     <main className="contact my-[150px] md:my-[200px] mx-[30px] md:mx-[60px]">
       <section className="section-contact lg:flex">
         <div className="section-contact__inner lg:w-8/12">
-          <h1 className="uppercase font-bold project-name leading-[100%] text-[40px] lg:text-[100px] mb-10">Contact</h1>
+          <h1 className="uppercase font-bold project-name leading-[100%] text-[40px] lg:text-[100px] mb-10"><AnimatedText text={text}/></h1>
           <p className="mb-10 lg:w-[600px]">Have a question or a project in mind? Let&rsquo;s chat! Drop me a message below , and let&rsquo;s kick off a conversation. Whether it&rsquo;s a collaboration opportunity or just to say hello, your message is always welcome.</p>
           <h2 className="thank-you hidden font-bold text-[40px] lg:text-[50px] mt-10">Message received! I&rsquo;ll get back to you soon. Check out my portfolio in the meantime!</h2>
           <form id="form" className="flex flex-col text-black" onSubmit={handleSubmit}>

@@ -1,7 +1,7 @@
 import { db } from '@vercel/postgres';
-import Link from 'next/link'
-import BlurImage from '../../components/BlurImage'
-
+import Link from 'next/link';
+import BlurImage from '../../components/BlurImage';
+import AnimatedText from '../../components/AnimatedText';
 
 const client = await db.connect();
 
@@ -20,12 +20,14 @@ export default async function ProjectsTemplate ({ params }) {
   let previousProject = projectLinks[projectLinks.indexOf(currentPage) - 1]
   let nextProject = projectLinks[projectLinks.indexOf(currentPage) + 1]
 
+  const text = project.rows[0].name;
+
   return (
     <main className="project-detail my-[150px] md:my-[200px] mx-[30px] md:mx-[60px]">
       <section className="flex flex-col gap-14 md:gap-6 lg:flex-row min-h-[80vh]">
         <div className="lg:w-1/3  flex flex-col gap-[20px]">
           <h1 className="project-name leading-[100%] font-medium text-[55px] lg:text-[80px]">
-            {project.rows[0].name}
+            <AnimatedText text={text} />
           </h1>
           <div className="flex items-center flex-wrap gap-[6px] group">
             {project.rows[0].languages_used.map((project) => (

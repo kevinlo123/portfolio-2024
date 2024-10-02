@@ -258,3 +258,7 @@ header label {
 .dark-mode .animate-spin {
   border-color: white;
 }
+
+.tradingview-widget-container {
+  height: 555px !important;
+}

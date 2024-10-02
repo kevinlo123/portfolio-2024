@@ -2,11 +2,13 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import AnimatedText from '../components/AnimatedText';
 
 export default function About() {
   const [loading, setLoading] = useState(true);
   const imagesRef = useRef([]);
   const soundCloudIframesRef = useRef([]);
+  const text = "About Me";
 
   const images = [
     '/about/international-2690990_640.jpg',
@@ -94,10 +96,67 @@ export default function About() {
     });
   }, [])
 
+  useEffect(() => {
+    const loadTradingViewWidget = () => {
+      if (typeof window !== 'undefined') {
+        const scriptExists = document.querySelector('script[src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js"]');
+  
+        if (!scriptExists) {
+          const script = document.createElement('script');
+          script.src = "https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js";
+          script.async = true;
+          script.innerHTML = JSON.stringify({
+            "symbols": [
+              ["MARKETSCOM:ETHEREUM|1D"],
+              ["MARKETSCOM:BITCOIN|1D"],
+              ["AMEX:VOO|1D"]
+            ],
+            "chartOnly": false,
+            "width": "100%",
+            "height": "100%",
+            "locale": "en",
+            "colorTheme": "dark",
+            "autosize": true,
+            "showVolume": false,
+            "showMA": false,
+            "hideDateRanges": false,
+            "hideMarketStatus": false,
+            "hideSymbolLogo": false,
+            "scalePosition": "right",
+            "scaleMode": "Normal",
+            "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+            "fontSize": "10",
+            "noTimeScale": false,
+            "valuesTracking": "1",
+            "changeMode": "price-and-percent",
+            "chartType": "area",
+            "maLineColor": "#2962FF",
+            "maLineWidth": 1,
+            "maLength": 9,
+            "headerFontSize": "medium",
+            "lineWidth": 2,
+            "lineType": 0,
+            "dateRanges": [
+              "1d|1",
+              "1m|30",
+              "3m|60",
+              "12m|1D",
+              "60m|1W",
+              "all|1M"
+            ]
+          });
+          document.querySelector(".tradingview-widget-container").appendChild(script);
+        }
+      }
+    };
+  
+    loadTradingViewWidget();
+  }, []); 
+
   return (
     <main className="contact my-[150px] md:my-[200px] mx-[30px] md:mx-[60px]">
         <div className={`mb-[5rem] ${loading ? 'hidden' : 'block'}`}>
-          <h1 className="uppercase font-bold project-name leading-[100%] text-[40px] lg:text-[100px] mb-10 lg:mb-[3.5rem]">About Me</h1>
+          <h1 className="uppercase font-bold project-name leading-[100%] text-[40px] lg:text-[100px] mb-10 lg:mb-[3.5rem]"><AnimatedText text={text}/></h1>
           <p className="citation font-[300] tracking-wide text-2xl italic">
             Hi, I&rsquo;m Kevin Lopez, a full-stack developer based in Boston, MA. I&rsquo;m passionate about building clean, user-friendly web experiences from the ground up—whether it&rsquo;s crafting sleek front-end designs or working on back-end functionality.
             <br />
@@ -108,6 +167,7 @@ export default function About() {
             Take a look around, and if you&rsquo;re interested in collaborating, let&rsquo;s connect!
           </p>
         </div>
+        <div style={{borderRadius: '.5rem', marginBottom: '1rem'}}  className="tradingview-widget-container"></div>
         <div className={`flex justify-center items-center h-[50vh] ${loading ? 'block' : 'hidden'}`}>
           <div className="animate-spin rounded-full h-32 w-32 border-b-4"></div>
         </div>
