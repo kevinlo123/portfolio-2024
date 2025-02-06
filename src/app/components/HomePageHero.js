@@ -5,7 +5,7 @@ import gsap from "gsap";
 
 export default function HomePageHero() {
   useEffect(() => {
-    const letters = document.querySelectorAll(".animated-letter"); // Select all letter spans
+    const letters = document.querySelectorAll(".animated-letter"); 
 
     gsap.fromTo(
       letters,
@@ -28,7 +28,7 @@ export default function HomePageHero() {
     );
   }, []);
 
-  const text = "Frontend Developer";
+  const text = "Software Engineer";
   const animatedText = (
     <>
       {text.split(' ').map((word, index) => (
@@ -56,11 +56,11 @@ export default function HomePageHero() {
       </h1>
       <div className="absolute left-0 bottom-[60px] right-0 flex items-end lg:items-start justify-between px-[30px] lg:px-[60px]">
         <div className="xl:h-[100px] xl:w-[100px] 2xl:w-[125px] 2xl:h-[125px] flex items-center">
-          <div className="animate-bounce">
+          <a href="#projects" className="animate-bounce">
             <svg className="translate-y-12 lg:translate-y-4" width="50px" height="100px" viewBox="0 0 80 40">
               <polyline fill="none" strokeWidth="4" strokeLinecap="inherit" strokeLinejoin="inherit" points="0,0 40,20 80,0" />
             </svg>
-          </div>
+          </a>
         </div>
         <div className="flex flex-col mb-2 lg:mb-0">
           <div className="flex items-center gap-4 xl:gap-[20px] 2xl:gap-[30px] down">

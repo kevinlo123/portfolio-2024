@@ -23,7 +23,7 @@ function TextAnimation() {
 
     let tlquote2 = gsap.timeline({
       scrollTrigger: {
-        trigger: "#ninth",
+        trigger: "#eleventh",
         start: "-=500", 
         end: "-=250",
         scrub: 1, 
@@ -133,14 +133,36 @@ function TextAnimation() {
 
     tl9.to("#ninth", { backgroundPositionX: '0%' })
 
+    let t20 = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#tenth",
+        start: "-=500", 
+        end: "-=350",
+        scrub: 1, 
+      },
+    });
+
+    t20.to("#tenth", { backgroundPositionX: '0%' })
+
+    let t21 = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#eleventh",
+        start: "-=500", 
+        end: "-=350",
+        scrub: 1, 
+      },
+    });
+
+    t21.to("#eleventh", { backgroundPositionX: '0%' })
+
 
   }, []);
 
     return (
-      <section className="py-[80px] lg:py-[200px] relative grid grid-cols-12 px-[30px] lg:px-[60px]">
+      <section id="projects" className="py-[80px] lg:py-[200px] relative grid grid-cols-12 px-[30px] lg:px-[60px]">
         <div className="col-span-6 relative hidden lg:block">
           <div className="fixed top-1/2 -translate-y-1/2 text-white w-1/3">
-            <p className="quote-text hidden citation opacity-0 font-[300] tracking-wide text-2xl italic">&quot;&nbsp;It’s not really that much big of a deal – you brush it off and you come back. Defeat is the secret ingredient to success.&nbsp;&quot;<br /> <br /> - Connor McGregor</p>
+            <p className="quote-text hidden citation opacity-0 font-[300] tracking-wide text-2xl italic">&quot;&nbsp;Me I want whats coming to me... The world chico and everything in it.&nbsp;&quot;<br /> <br /> - Antonio Montana</p>
           </div>
         </div>
         <div className="text col-span-12 lg:col-span-6 flex flex-col gap-14">
@@ -153,6 +175,8 @@ function TextAnimation() {
           <p id="seventh" className="about uppercase font-bold text-right text-[40px] lg:text-[80px] xl:text-[100px]">POSTGRESQL</p>
           <p id="eighth" className="about uppercase font-bold text-right text-[40px] lg:text-[80px] xl:text-[100px]">CSS/SCSS</p>
           <p id="ninth" className="about uppercase font-bold text-right text-[40px] lg:text-[80px] xl:text-[100px]">TAILWIND CSS</p>
+          <p id="tenth" className="about uppercase font-bold text-right text-[40px] lg:text-[80px] xl:text-[100px]">AWS</p>
+          <p id="eleventh" className="about uppercase font-bold text-right text-[40px] lg:text-[80px] xl:text-[100px]">CI/CD</p>
         </div>
       </section>
     )
