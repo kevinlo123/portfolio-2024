@@ -15,11 +15,34 @@
 
 .pulsating-circle {
   position: absolute;
-  right: 20%;
+  right: -25%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   width: 15px;
   height: 15px;
+}
+
+.location-text {
+  position: relative;
+  left: 2rem;
+}
+
+@media screen and (max-width: 1140px) {
+  .location-text {
+    left: -1rem;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .pulsating-circle {
+    right: 0%;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  .pulsating-circle {
+    right: 20%;
+  }
 }
 
 .pulsating-circle::before {

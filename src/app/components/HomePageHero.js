@@ -62,13 +62,13 @@ export default function HomePageHero() {
             </svg>
           </a>
         </div>
-        <div className="flex flex-col mb-2 lg:mb-0">
+        <div className="flex flex-col mb-2 lg:mb-0 location-text">
           <div className="flex items-center gap-4 xl:gap-[20px] 2xl:gap-[30px] down">
             <h3 className="uppercase xl:text-[26px] 2xl:text-[32px] font-[400]">Open to work</h3>
           </div>
           <h4 className="font-[200] lg:ml-1 based-in relative">
             Based in Boston, MA
-            <div class="pulsating-circle"></div>
+            <div className="pulsating-circle"></div>
           </h4>
         </div>
       </div>
