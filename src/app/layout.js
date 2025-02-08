@@ -2,6 +2,7 @@ import Header from './globals/Header.js'
 import Footer from './globals/Footer.js'
 import "./globals.css";
 import {Providers} from "./providers";
+import Disintegrate from "./components/Disintegrate.js";
 
 export const metadata = {
   title: "Kevin Lopez's Portfolio",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
           <Providers>
+            <Disintegrate />
             {children}
           </Providers>
         <Footer />

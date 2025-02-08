@@ -66,7 +66,10 @@ export default function HomePageHero() {
           <div className="flex items-center gap-4 xl:gap-[20px] 2xl:gap-[30px] down">
             <h3 className="uppercase xl:text-[26px] 2xl:text-[32px] font-[400]">Open to work</h3>
           </div>
-          <h4 className="font-[200] lg:ml-1 based-in">Based in Boston, MA</h4>
+          <h4 className="font-[200] lg:ml-1 based-in relative">
+            Based in Boston, MA
+            <div class="pulsating-circle"></div>
+          </h4>
         </div>
       </div>
     </section>
