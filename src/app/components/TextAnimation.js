@@ -162,7 +162,7 @@ function TextAnimation() {
       <section id="projects" className="py-[80px] lg:py-[200px] relative grid grid-cols-12 px-[30px] lg:px-[60px]">
         <div className="col-span-6 relative hidden lg:block">
           <div className="fixed top-1/2 -translate-y-1/2 text-white w-1/3">
-            <p className="quote-text hidden citation opacity-0 font-[300] tracking-wide text-2xl italic">&quot;&nbsp;Me I want whats coming to me... The world chico and everything in it.&nbsp;&quot;<br /> <br /> - Antonio Montana</p>
+            <p className="quote-text hidden citation opacity-0 font-[300] tracking-wide text-2xl italic">&quot;&nbsp;Once something is a passion, the motivation is there&nbsp;&quot;<br /> <br /> - Michael Schumacher</p>
           </div>
         </div>
         <div className="text col-span-12 lg:col-span-6 flex flex-col gap-14">
